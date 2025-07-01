@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OpenList</Name>
+  <Repository>openlistteam/openlist:latest</Repository>
+  <Registry>https://hub.docker.com/r/openlistteam/openlist</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/OpenListTeam/OpenList/issues</Support>
+  <Project>https://github.com/OpenListTeam/OpenList</Project>
+  <Overview>Drop-in replacement for AList with long-term governance, no hidden risks, and full transparency, built to defend open source against trust-based attacks.&#xD;
+&#xD;
+We sincerely thank the author Xhofe of the original project AlistGo/alist and all other contributors.&#xD;
+&#xD;
+This fork is not yet stable, specific migration progress can be viewed in OpenList Migration Work Summary.&#xD;
+&#xD;
+Important: Initial password in the log.</Overview>
+  <Category>Cloud: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:5244]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/DearTanker/Unraid-OpenList-Docker-Template/refs/heads/main/OpenList-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1751332385</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI Port" Target="5244" Default="5244" Mode="tcp" Description="Web UI Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
+  <Config Name="Data Path" Target="/opt/openlist/data" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/openlist</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
+</Container>
