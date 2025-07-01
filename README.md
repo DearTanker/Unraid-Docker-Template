@@ -1,1 +1,3 @@
-# Unraid-OpenList-Docker-Template
+# Unraid-Docker-Template
+
+For Unraid Docker only.
